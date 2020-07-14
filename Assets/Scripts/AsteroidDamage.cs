@@ -6,6 +6,7 @@ public class AsteroidDamage : MonoBehaviour
     public float health;
     public GameObject destroySoundPrefab;
     public GameObject[] powerUps;
+    public int powerUpDropChance = 4;
     private AudioSource hitSound;
 
     // Start is called before the first frame update
@@ -55,7 +56,7 @@ public class AsteroidDamage : MonoBehaviour
     {
         if (health <= 0 ^ (rb.velocity.x + rb.velocity.z > -1f && rb.velocity.x + rb.velocity.z < 1f))
         {
-            if (Random.Range(0, 2) == 0)
+            if (Random.Range(0, powerUpDropChance) == 0)
             {
                 var powerUp = Instantiate(powerUps[Random.Range(0, powerUps.Length)]);
                 powerUp.transform.position = transform.position;

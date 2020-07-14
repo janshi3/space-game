@@ -1878,9 +1878,9 @@ MonoBehaviour:
   maxUses: 0
   powerUpImages:
   - {fileID: 21300000, guid: 19d8e538c46859d4aaa05bafe89968bd, type: 3}
-  - {fileID: 21300000, guid: 19d8e538c46859d4aaa05bafe89968bd, type: 3}
-  - {fileID: 21300000, guid: 19d8e538c46859d4aaa05bafe89968bd, type: 3}
-  - {fileID: 21300000, guid: fc0270dccdffe7b4db33fcd72f8a240f, type: 3}
+  - {fileID: 21300000, guid: a406b3862ddca064bbe19e64b1eb03a6, type: 3}
+  - {fileID: 21300000, guid: a406b3862ddca064bbe19e64b1eb03a6, type: 3}
+  - {fileID: 21300000, guid: 45ea95f74bc80ab49957421281cc730d, type: 3}
   powerUpImage: {fileID: 591325652}
   powerUpObject: {fileID: 591325650}
   player: {fileID: 1934025325}
@@ -1910,17 +1910,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591325650}
-  m_LocalRotation: {x: 0, y: 0, z: -0.17364825, w: 0.9848078}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 560493533}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -20}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1.5, y: -2.98}
-  m_SizeDelta: {x: 46.766724, y: 74.03769}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &591325652
 MonoBehaviour:
@@ -1941,7 +1941,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 19d8e538c46859d4aaa05bafe89968bd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a406b3862ddca064bbe19e64b1eb03a6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

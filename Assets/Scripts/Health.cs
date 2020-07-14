@@ -54,7 +54,7 @@ public class Health : MonoBehaviour
 
     void Update()
     {
-        if (anger >= 3)
+        if (anger >= 3 && gameObject.name != "Player")
         {
             gameObject.transform.Find("SpaceShip").GetComponent<MeshRenderer>().material = yellowShip;
             gameObject.transform.Find("SpaceShip").transform.Find("ShipEnergy").GetComponent<MeshRenderer>().material = yellowEnergy;
