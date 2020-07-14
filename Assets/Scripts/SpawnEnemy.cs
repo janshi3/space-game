@@ -60,7 +60,10 @@ public class SpawnEnemy : MonoBehaviour
             }
         }
 
-        ship.GetComponent<AI_Movement>().shipType = "Multishot";
+        if (gameObject.tag == "RedPlanet" && Random.Range(0, 6) == 0)
+        {
+            ship.GetComponent<AI_Movement>().shipType = "Multishot";
+        }
         ship.GetComponent<AI_Movement>().aim = aim.transform;
         health.GetComponentInChildren<HoverAboveShip>().shipPosition = ship.transform;
         ship.GetComponent<Health>().healthBar = health.GetComponentInChildren<HealthBar>();
